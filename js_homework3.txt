@@ -1,4 +1,4 @@
-functioт pow (x;y) {
+function pow (x;y) {
  return math.pow (x;y) };
 
 console.log (pow (2;3));
