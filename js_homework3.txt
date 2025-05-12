@@ -1,4 +1,9 @@
-function pow (x;y) {
- return math.pow (x;y) };
-
-console.log (pow (2;3));
+function sumNumber(a, n) {
+  let sum = 1;
+  for (let x = 1; x <= n; x++) {
+    sum *= a;
+  }
+  return sum;
+}
+let result = sumNumber(2, 3);
+console.log(result);
