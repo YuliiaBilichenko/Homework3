@@ -1,0 +1,22 @@
+function checkProbabilityTheory(count) {
+  let countParni = 0;
+  let countNeParni = 0;
+
+  for (let i = 0; i < count; i++) {
+    const num = Math.round(100 + Math.random() * (1000 - 100));
+    if (num % 2 === 0) {
+      countParni++;
+    } else {
+      countNeParni++;
+    }
+  }
+
+  const parniPercentage = (countParni / count) * 100;
+  const neparniPercentage = (countNeParni / count) * 100;
+
+  console.log(`Загальна кількість чисел: ${count}`);
+  console.log(`Парних: ${countParni} (${parniPercentage}%)`);
+  console.log(`Непарних: ${countNeParni} (${neparniPercentage}%)`);
+}
+
+checkProbabilityTheory(10);
