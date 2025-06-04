@@ -1,0 +1,22 @@
+var arr = [
+  {
+    userName: "Test",
+    lastName: "Test",
+    email: "test.test@gmail.com",
+  },
+  {
+    userName: "Dmitro",
+    lastName: "Porohov",
+    email: "dmitro.porohov@yahoo.com",
+  },
+  {
+    userName: "Andrii",
+    lastName: "",
+    email: "andrii@mail.ru",
+  },
+];
+const evenEmail = arr.filter((user) => {
+  const validEmail = /^[A-Za-z0-9._%+-]+@(gmail\.com|yahoo\.com)$/;
+  return validEmail.test(user.email);
+});
+console.log(evenEmail);
